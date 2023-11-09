@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Kohl`s</title>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="shortcut icon" href="./img/logo.jpg">
+
+	</head>
+	<body>
+		<header>
+			<h1>Kohl`s</h1>
+
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="./img/conjunto.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Conjunto</h2>
+					<p class="price">$182</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/descuento.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Conjunto y saco beige</h2>
+					<p class="price">$420</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/descuento1.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Vestido</h2>
+					<p class="price">$213</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/descuento2.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Camisa con estampado</h2>
+					<p class="price">$210</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/calzadoh.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Skate Shoes Men Shoes</h2>
+					<p class="price">$900</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/calzadoh1.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Adidas Centennial 85</h2>
+					<p class="price">$795</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/calzadoh2.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Botas Negras</h2>
+					<p class="price">$300</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/calzadoh3.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Zapatos</h2>
+					<p class="price">$500</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/calzadom.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Sandalias de tacon</h2>
+					<p class="price">$628</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/calzadom1.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Rimocy shoes</h2>
+					<p class="price">$450</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/calzadom2.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Chunky sports	</h2>
+					<p class="price">$561</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div> 
+			<div class="item">
+				<figure>
+					<img
+						src="./img/accesorios.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Collar de planetas</h2>
+					<p class="price">$135</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/accesorio1.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Bolsa cuadrada</h2>
+					<p class="price">$100</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/accesorios2.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Donas para cabello</h2>
+					<p class="price">$90</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/accesorios3.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Pinzas para cabello</h2>
+					<p class="price">$49</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/accesorios4.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Aretes de corazon</h2>
+					<p class="price">$35</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/accesorios5.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Lentes basicos</h2>
+					<p class="price">$75</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/belleza.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Contorno de ojos</h2>
+					<p class="price">$68</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/belleza1.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Serum</h2>
+					<p class="price">$120</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/belleza2.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Cepìllo Facial</h2>
+					<p class="price">$49</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/belleza3.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Limpiador Facial</h2>
+					<p class="price">$200</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/belleza4.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Masajeador Facial</h2>
+					<p class="price">$40</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/belleza5.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Paleta de rubores</h2>
+					<p class="price">$130</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/belleza6.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Set de brochas </h2>
+					<p class="price">$150</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/belleza7.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Labial wonka</h2>
+					<p class="price">$100</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/belleza8.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Paleta de sombras</h2>
+					<p class="price">$230</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/new.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Abrigo Vintage</h2>
+					<p class="price">$300</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/new1.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Zapatillas de tacon</h2>
+					<p class="price">$430</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/new2.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Conjunto</h2>
+					<p class="price">$210</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/new3.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Collar </h2>
+					<p class="price">$30</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/new4.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Uñas Press On</h2>
+					<p class="price">$75</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/new5.jpg"
+						alt="producto">
+				</figure>
+				<div class="info-product">
+					<h2>Pinzas</h2>
+					<p class="price">$35</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/new6.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Collar de mariposa</h2>
+					<p class="price">$65</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/new7.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Sueter Oversize </h2>
+					<p class="price">$245</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/niños.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>500 gomitas </h2>
+					<p class="price">$55</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/niños1.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Cojin de viaje </h2>
+					<p class="price">$450</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/niños2.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Bolso de viaje</h2>
+					<p class="price">$250</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/niños3.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Sandalias </h2>
+					<p class="price">$150</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/niños4.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Playera </h2>
+					<p class="price">$90</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/niños5.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Tenis blancos </h2>
+					<p class="price">$900</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/niños6.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Mochila de dinosaurio </h2>
+					<p class="price">$590</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="./img/niños7.jpg"
+						alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Botas de dinosaurio</h2>
+					<p class="price">$190</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		</div><br><br>
+		<a href="./Proyecto.html"><input type="button" value="Volver al incicio">
+        
+		</button></a><br><br>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+.efects{
+    background-color: white;
+    border-radius: 60px;
+    padding: 5px 20px 5px 20px;
+    box-shadow: rgb(150, 150, 150) 5px 5px 10px ;
+
+}
+
+.imagen-dos{
+    position: absolute;
+    z-index: -2;
+    border-radius: 30px;
+    height:70%; 
+    width:40%;
+    margin: 20px 0px 0px 0px;
+}
+.stilot{
+    margin: 0px 0px 0px 250px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 125px;
+    text-shadow: rgb(255, 255, 255) 5px 4px 1px;
+    padding: 0px 0px 0px 0px;
+    
+}
+.subtt{
+    margin: 0px 5px 0px 470px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    text-shadow: rgb(255, 255, 255) 1px 1px 0px;
+}
+.nav-item{
+    font-family: 'Gill Sans', 'Trebuchet MS' ;
+    margin: 10px 20px 10px 20px;
+    
+}
+.nav-item:hover{
+
+    
+    border-radius: 30px;
+    padding: 0px 3px 0px 3px;
+    /*margin: 10px 0px 20px 0px;*/
+    background-color: rgba(103, 5, 103, 0.404);
+    box-shadow: rgb(150, 150, 150) 3px 3px 3px;
+    
+}
+.frente-de{
+
+    margin: 0px 0px 0px 100px;
+    
+}
+body{
+    background-image: url(/img/priscilla-du-preez-dlxLGIy-2VU-unsplash.jpg) ;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
